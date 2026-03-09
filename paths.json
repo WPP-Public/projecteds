@@ -1,8 +1,8 @@
 {
   "mappings": [
-    "/content/eds-demo-nps/:/"
+    "/content/eds-demo-nps-ue/:/"
   ],
   "includes": [
-    "/content/eds-demo-nps/"
+    "/content/eds-demo-nps-ue/"
   ]
 }
