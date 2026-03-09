@@ -15,7 +15,14 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "weather",
+      "author-info",
+      "cta-banner",
+      "map",
+      "social-share",
+      "tabs",
+      "carousel"
     ]
   },
   {
