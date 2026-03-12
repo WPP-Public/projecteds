@@ -74,7 +74,7 @@ footer .footer .columns a:any-link {
   font-weight: normal;
   display: inline;
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--text-color);
 }
 
 footer .columns a:hover,
@@ -83,6 +83,6 @@ footer .footer .columns a:hover,
 footer .footer .columns a:focus-visible {
   border: none;
   background-color: transparent;
-  color: var(--link-hover-color);
+  color: var(--text-color);
   text-decoration: underline;
 }
