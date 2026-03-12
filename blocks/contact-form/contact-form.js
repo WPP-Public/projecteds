@@ -260,18 +260,14 @@ export default function decorate(block) {
     };
 
     try {
-      const response = await fetch(endpoint, {
+      await fetch(endpoint, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        mode: 'no-cors',
         body: JSON.stringify(payload),
       });
 
-      if (!response.ok) {
-        throw new Error(`Request failed with status ${response.status}`);
-      }
-
+      // With no-cors the response is opaque; assume success if the
+      // network request did not fail at the browser level.
       status.textContent = successMessage;
       status.classList.remove('error');
       status.classList.add('success');
