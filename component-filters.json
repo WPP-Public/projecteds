@@ -14,6 +14,7 @@
       "title",
       "hero",
       "cards",
+      "logo-cards",
       "columns",
       "fragment",
       "weather",
@@ -29,6 +30,12 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "logo-cards",
+    "components": [
+      "logo-card"
     ]
   },
   {

@@ -98,6 +98,36 @@
           }
         },
         {
+          "title": "Logo Cards",
+          "id": "logo-cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Logo Cards",
+                  "filter": "logo-cards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Logo Card",
+          "id": "logo-card",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Logo Card",
+                  "model": "logo-card"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Card",
           "id": "card",
           "plugins": {

@@ -400,5 +400,42 @@
   {
     "id": "carousel",
     "fields": []
+  },
+  {
+    "id": "logo-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Logo / Icon",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta-label",
+        "label": "CTA Label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta-url",
+        "label": "CTA URL"
+      }
+    ]
   }
 ]
