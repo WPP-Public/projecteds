@@ -1,5 +1,2 @@
 mountpoints:
-  /:
-    url: "https://author-p35060-e135910.adobeaemcloud.com/bin/franklin.delivery/wpp-public/projecteds/main"
-    type: "markup"
-    suffix: ".html"
+  /: "https://drive.google.com/drive/folders/1slDV_VWTaxk0Rne3G9yxH8AEl7WFD_xv"
