@@ -1,4 +1,5 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
+import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   const rows = [...block.querySelectorAll(':scope > div')];
@@ -7,6 +8,8 @@ export default function decorate(block) {
 
   rows.forEach((row) => {
     const li = document.createElement('li');
+    moveInstrumentation(row, li);
+
     const cells = [...row.children];
 
     const iconCell = cells[0] || null;
@@ -24,6 +27,13 @@ export default function decorate(block) {
           false,
           [{ width: '64' }],
         );
+        const optimizedImg = optimized.querySelector('img');
+        if (optimizedImg) {
+          moveInstrumentation(rawImg, optimizedImg);
+        }
+        const pictureOrImg = rawImg.closest('picture') || rawImg;
+        pictureOrImg.replaceWith(optimized);
+
         iconWrapper = document.createElement('div');
         iconWrapper.className = 'logo-card-icon';
         iconWrapper.append(optimized);
@@ -68,6 +78,5 @@ export default function decorate(block) {
     ul.appendChild(li);
   });
 
-  block.innerHTML = '';
-  block.appendChild(ul);
+  block.replaceChildren(ul);
 }
