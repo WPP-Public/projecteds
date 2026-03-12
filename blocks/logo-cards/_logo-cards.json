@@ -33,6 +33,10 @@
   ],
   "models": [
     {
+      "id": "logo-cards",
+      "fields": []
+    },
+    {
       "id": "logo-card",
       "fields": [
         {
