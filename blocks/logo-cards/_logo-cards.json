@@ -1,0 +1,86 @@
+{
+  "definitions": [
+    {
+      "title": "Logo Cards",
+      "id": "logo-cards",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Logo Cards",
+              "filter": "logo-cards"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Logo Card",
+      "id": "logo-card",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Logo Card",
+              "model": "logo-card"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "logo-cards",
+      "fields": []
+    },
+    {
+      "id": "logo-card",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "icon",
+          "label": "Logo / Icon",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Title"
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "description",
+          "label": "Description",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "cta-label",
+          "label": "CTA Label"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "cta-url",
+          "label": "CTA URL"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "logo-cards",
+      "components": [
+        "logo-card"
+      ]
+    }
+  ]
+}
+

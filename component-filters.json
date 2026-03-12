@@ -14,6 +14,8 @@
       "title",
       "hero",
       "cards",
+      "contact-form",
+      "logo-cards",
       "columns",
       "fragment",
       "weather",
@@ -29,6 +31,18 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "logo-cards",
+    "components": [
+      "logo-card"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-cards"
     ]
   },
   {
