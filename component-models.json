@@ -457,6 +457,25 @@
     ]
   },
   {
+    "id": "contact-form",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "endpoint",
+        "label": "Submission Endpoint URL",
+        "description": "HTTPS endpoint that receives JSON and writes to AEM or Google Sheet."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "successMessage",
+        "label": "Success Message",
+        "value": "Thank you. Your request has been submitted."
+      }
+    ]
+  },
+  {
     "id": "logo-cards",
     "fields": []
   },
