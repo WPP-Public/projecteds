@@ -24,7 +24,8 @@
       "map",
       "social-share",
       "tabs",
-      "carousel"
+      "carousel",
+      "accordion"
     ]
   },
   {
@@ -43,6 +44,12 @@
     "id": "carousel",
     "components": [
       "carousel-cards"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
     ]
   },
   {
