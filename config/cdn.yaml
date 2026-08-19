@@ -1,0 +1,10 @@
+kind: "CDN"
+version: "1"
+data:
+  rules:
+    - name: weather-route
+      request:
+        path: "/api/weather"
+      action:
+        type: "edgeFunction"
+        function: "weather-api-proxy"
