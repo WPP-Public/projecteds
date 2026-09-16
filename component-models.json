@@ -142,6 +142,57 @@
     ]
   },
   {
+    "id": "accordion",
+    "fields": []
+  },
+  {
+    "id": "accordion-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "accordionTitle",
+        "label": "Accordion Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "accordionContent",
+        "label": "Accordion Content"
+      }
+    ]
+  },
+  {
+    "id": "author-info",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "author-name",
+        "label": "Name"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "role",
+        "label": "Role"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "date",
+        "label": "Date"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -161,6 +212,65 @@
     ]
   },
   {
+    "id": "carousel",
+    "fields": []
+  },
+  {
+    "id": "carousel-cards",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "alignment",
+        "label": "Card Alignment",
+        "value": "center",
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Card Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Card Description"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonLabel",
+        "label": "Button Label"
+      },
+      {
+        "component": "aem-content",
+        "name": "buttonLink",
+        "label": "Button Link"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
@@ -176,6 +286,72 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "contact-form",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "endpoint",
+        "label": "Submission Endpoint URL",
+        "description": "HTTPS endpoint that receives JSON and writes to AEM or Google Sheet."
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "successMessage",
+        "label": "Success Message",
+        "value": "Thank you. Your request has been submitted."
+      }
+    ]
+  },
+  {
+    "id": "cta-banner",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "text",
+        "label": "Body Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "button-text",
+        "label": "Button Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "button-link",
+        "label": "Button Link"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "theme",
+        "label": "Theme",
+        "value": "primary",
+        "options": [
+          {
+            "name": "Primary",
+            "value": "primary"
+          },
+          {
+            "name": "Secondary",
+            "value": "secondary"
+          }
+        ]
       }
     ]
   },
@@ -214,6 +390,90 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "logo-cards",
+    "fields": []
+  },
+  {
+    "id": "logo-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Logo / Icon",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta-label",
+        "label": "CTA Label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta-url",
+        "label": "CTA URL"
+      }
+    ]
+  },
+  {
+    "id": "map",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "location",
+        "label": "Location"
+      }
+    ]
+  },
+  {
+    "id": "social-share",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "site-name",
+        "label": "Site Name"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "base-url",
+        "label": "Base URL"
+      }
+    ]
+  },
+  {
+    "id": "tabs",
+    "fields": [
+      {
+        "valueType": "string",
+        "component": "text",
+        "name": "title",
+        "label": "Tabs Title"
+      }
+    ]
+  },
+  {
+    "id": "tab",
+    "fields": []
   },
   {
     "id": "weather",
@@ -278,266 +538,6 @@
             "value": "Nepal"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "author-info",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "author-name",
-        "label": "Name"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "role",
-        "label": "Role"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "date",
-        "label": "Date"
-      }
-    ]
-  },
-  {
-    "id": "cta-banner",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "text",
-        "label": "Body Text",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "button-text",
-        "label": "Button Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "button-link",
-        "label": "Button Link"
-      },
-      {
-        "component": "select",
-        "valueType": "string",
-        "name": "theme",
-        "label": "Theme",
-        "value": "primary",
-        "options": [
-          {
-            "name": "Primary",
-            "value": "primary"
-          },
-          {
-            "name": "Secondary",
-            "value": "secondary"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "map",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "location",
-        "label": "Location"
-      }
-    ]
-  },
-  {
-    "id": "social-share",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "site-name",
-        "label": "Site Name"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "base-url",
-        "label": "Base URL"
-      }
-    ]
-  },
-  {
-    "id": "tabs",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Tabs Title"
-      }
-    ]
-  },
-  {
-    "id": "tab",
-    "fields": []
-  },
-  {
-    "id": "carousel",
-    "fields": []
-  },
-  {
-    "id": "carousel-cards",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image"
-      },
-      {
-        "component": "select",
-        "valueType": "string",
-        "name": "alignment",
-        "label": "Card Alignment",
-        "value": "center",
-        "options": [
-          {
-            "name": "Left",
-            "value": "left"
-          },
-          {
-            "name": "Center",
-            "value": "center"
-          },
-          {
-            "name": "Right",
-            "value": "right"
-          }
-        ]
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Card Title"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "description",
-        "label": "Card Description"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "buttonLabel",
-        "label": "Button Label"
-      },
-      {
-        "component": "aem-content",
-        "name": "buttonLink",
-        "label": "Button Link"
-      }
-    ]
-  },
-  {
-    "id": "accordion",
-    "fields": []
-  },
-  {
-    "id": "accordion-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "accordionTitle",
-        "label": "Accordion Title"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "accordionContent",
-        "label": "Accordion Content"
-      }
-    ]
-  },
-  {
-    "id": "contact-form",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "endpoint",
-        "label": "Submission Endpoint URL",
-        "description": "HTTPS endpoint that receives JSON and writes to AEM or Google Sheet."
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "successMessage",
-        "label": "Success Message",
-        "value": "Thank you. Your request has been submitted."
-      }
-    ]
-  },
-  {
-    "id": "logo-cards",
-    "fields": []
-  },
-  {
-    "id": "logo-card",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "icon",
-        "label": "Logo / Icon",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "description",
-        "label": "Description",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "cta-label",
-        "label": "CTA Label"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "cta-url",
-        "label": "CTA URL"
       }
     ]
   }

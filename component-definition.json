@@ -83,15 +83,45 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Contact Form",
-          "id": "contact-form",
+          "title": "Accordion",
+          "id": "accordion",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Contact Form",
-                  "model": "contact-form"
+                  "name": "Accordion",
+                  "filter": "accordion"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion Item",
+          "id": "accordion-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion Item",
+                  "model": "accordion-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Author Info",
+          "id": "author-info",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Author Info",
+                  "model": "author-info"
                 }
               }
             }
@@ -113,36 +143,6 @@
           }
         },
         {
-          "title": "Logo Cards",
-          "id": "logo-cards",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Logo Cards",
-                  "filter": "logo-cards"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Logo Card",
-          "id": "logo-card",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Logo Card",
-                  "model": "logo-card"
-                }
-              }
-            }
-          }
-        },
-        {
           "title": "Card",
           "id": "card",
           "plugins": {
@@ -158,6 +158,36 @@
           }
         },
         {
+          "title": "Carousel",
+          "id": "carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel",
+                  "filter": "carousel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Cards",
+          "id": "carousel-cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Cards",
+                  "model": "carousel-cards"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Columns",
           "id": "columns",
           "plugins": {
@@ -167,6 +197,36 @@
                 "template": {
                   "columns": "2",
                   "rows": "1"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Contact Form",
+          "id": "contact-form",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Contact Form",
+                  "model": "contact-form"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "CTA Banner",
+          "id": "cta-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "CTA Banner",
+                  "model": "cta-banner"
                 }
               }
             }
@@ -203,45 +263,30 @@
           }
         },
         {
-          "title": "Weather",
-          "id": "weather",
+          "title": "Logo Cards",
+          "id": "logo-cards",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Weather",
-                  "model": "weather"
+                  "name": "Logo Cards",
+                  "filter": "logo-cards"
                 }
               }
             }
           }
         },
         {
-          "title": "Author Info",
-          "id": "author-info",
+          "title": "Logo Card",
+          "id": "logo-card",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
+                "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Author Info",
-                  "model": "author-info"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "CTA Banner",
-          "id": "cta-banner",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "CTA Banner",
-                  "model": "cta-banner"
+                  "name": "Logo Card",
+                  "model": "logo-card"
                 }
               }
             }
@@ -308,60 +353,15 @@
           }
         },
         {
-          "title": "Carousel",
-          "id": "carousel",
+          "title": "Weather",
+          "id": "weather",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Carousel",
-                  "filter": "carousel"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Accordion",
-          "id": "accordion",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Accordion",
-                  "filter": "accordion"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Accordion Item",
-          "id": "accordion-item",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Accordion Item",
-                  "model": "accordion-item"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Carousel Cards",
-          "id": "carousel-cards",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Carousel Cards",
-                  "model": "carousel-cards"
+                  "name": "Weather",
+                  "model": "weather"
                 }
               }
             }

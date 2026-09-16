@@ -49,13 +49,22 @@
         "title",
         "hero",
         "cards",
+        "contact-form",
         "logo-cards",
         "columns",
-        "fragment"
+        "fragment",
+        "weather",
+        "author-info",
+        "cta-banner",
+        "map",
+        "social-share",
+        "tabs",
+        "carousel",
+        "accordion" 
       ]
     },
     {
-      "id": "text",
+      "id": "richtext",
       "rte": {
         "toolbar": {
           "format": ["bold", "italic", "underline", "strike", "code_inline", "text_color"],
@@ -96,7 +105,7 @@
           }
         }
       },
-      "components": ["text"]
+      "components": ["richtext"]
     }
   ]
 }
