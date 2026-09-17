@@ -16,7 +16,7 @@
       }
     },
     {
-      "title": "Carousel Card",
+      "title": "Carousel Cards",
       "id": "carousel-cards",
       "plugins": {
         "xwalk": {
