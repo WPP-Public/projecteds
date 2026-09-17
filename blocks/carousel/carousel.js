@@ -47,26 +47,28 @@ export default function decorate(block) {
       const overlay = document.createElement('div');
       overlay.className = `carousel-overlay overlay-${alignment}`;
 
-      [alignmentCell, titleCell, descCell, buttonLabelCell, buttonLinkCell, styleCell].forEach((c) => {
-        if (c?.parentNode) {
-          c.classList.add('carousel-overlay-cell');
-          if (c === alignmentCell) c.classList.add('carousel-alignment');
-          if (c === titleCell) c.classList.add('carousel-title');
-          if (c === descCell) c.classList.add('carousel-desc');
-          if (c === buttonLabelCell) c.classList.add('carousel-label');
-          if (c === buttonLinkCell) {
-            c.classList.add('carousel-link');
-            applyButtonClass(c, buttonLabel);
+      [alignmentCell, titleCell, descCell, buttonLabelCell, buttonLinkCell, styleCell]
+        .forEach((c) => {
+          if (c?.parentNode) {
+            c.classList.add('carousel-overlay-cell');
+            if (c === alignmentCell) c.classList.add('carousel-alignment');
+            if (c === titleCell) c.classList.add('carousel-title');
+            if (c === descCell) c.classList.add('carousel-desc');
+            if (c === buttonLabelCell) c.classList.add('carousel-label');
+            if (c === buttonLinkCell) {
+              c.classList.add('carousel-link');
+              applyButtonClass(c, buttonLabel);
+            }
+            if (c === styleCell) c.classList.add('carousel-button-style');
+            overlay.appendChild(c);
           }
-          if (c === styleCell) c.classList.add('carousel-button-style');
-          overlay.appendChild(c);
-        }
-      });
+        });
       slide.appendChild(overlay);
     } else {
-      [alignmentCell, titleCell, descCell, buttonLabelCell, buttonLinkCell, styleCell].forEach((c) => {
-        if (c?.parentNode) c.remove();
-      });
+      [alignmentCell, titleCell, descCell, buttonLabelCell, buttonLinkCell, styleCell]
+        .forEach((c) => {
+          if (c?.parentNode) c.remove();
+        });
     }
   });
 
@@ -130,13 +132,13 @@ export default function decorate(block) {
 
   nextBtn.addEventListener('click', () => {
     if (currentIndex >= totalSlides + 1) return;
-    currentIndex++;
+    currentIndex += 1;
     setPosition();
   });
 
   prevBtn.addEventListener('click', () => {
     if (currentIndex <= 0) return;
-    currentIndex--;
+    currentIndex -= 1;
     setPosition();
   });
 

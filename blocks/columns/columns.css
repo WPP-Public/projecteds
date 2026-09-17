@@ -64,6 +64,18 @@
   text-decoration: none;
 }
 
+/* The footer selectors intentionally override the shared column link styles. */
+/* stylelint-disable no-descending-specificity */
+footer .columns a:hover,
+footer .columns a:focus-visible,
+footer .footer .columns a:hover,
+footer .footer .columns a:focus-visible {
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
 footer .columns a:any-link,
 footer .footer .columns a:any-link {
   border: none;
@@ -76,13 +88,4 @@ footer .footer .columns a:any-link {
   text-decoration: none;
   color: var(--text-color);
 }
-
-footer .columns a:hover,
-footer .columns a:focus-visible,
-footer .footer .columns a:hover,
-footer .footer .columns a:focus-visible {
-  border: none;
-  background-color: transparent;
-  color: var(--text-color);
-  text-decoration: underline;
-}
+/* stylelint-enable no-descending-specificity */

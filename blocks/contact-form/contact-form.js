@@ -184,7 +184,8 @@ export default function decorate(block) {
   });
 
   function clearErrors() {
-    [nameField, emailField, phoneField, trekField, commentsField, { error: termsField.error }].forEach((f) => {
+    [nameField, emailField, phoneField, trekField, commentsField,
+      { error: termsField.error }].forEach((f) => {
       if (f.error) f.error.textContent = '';
     });
     status.textContent = '';
@@ -273,7 +274,8 @@ export default function decorate(block) {
       status.classList.add('success');
       form.reset();
     } catch (e) {
-      status.textContent = 'Something went wrong while submitting the form. Please try again.';
+      status.textContent = 'Something went wrong while submitting the form. '
+        + 'Please try again.';
       status.classList.remove('success');
       status.classList.add('error');
     } finally {
@@ -283,4 +285,3 @@ export default function decorate(block) {
 
   form.addEventListener('submit', submitForm);
 }
-
