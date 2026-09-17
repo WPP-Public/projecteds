@@ -59,7 +59,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .logo-cards > ul > li {
     padding: 16px 18px;
   }

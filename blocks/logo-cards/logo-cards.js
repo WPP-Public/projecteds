@@ -7,7 +7,7 @@ export default function decorate(block) {
 
   rows.forEach((row) => {
     const li = document.createElement('li');
-    
+
     // Check if moveInstrumentation exists before calling it
     if (scripts.moveInstrumentation) {
       scripts.moveInstrumentation(row, li);
@@ -18,7 +18,7 @@ export default function decorate(block) {
     // Find cells by content to handle varying table structures in gdrive
     const iconCell = cells.find((c) => c.querySelector('picture, img'));
     const nonImageCells = cells.filter((c) => c.textContent.trim() && !c.querySelector('picture, img'));
-    
+
     const titleCell = nonImageCells[0] || null;
     const descriptionCell = nonImageCells[1] || null;
     const ctaCell = cells.find((c) => c.querySelector('a'));
@@ -34,7 +34,7 @@ export default function decorate(block) {
           false,
           [{ width: '80' }],
         );
-        
+
         // Instrumentation for the image specifically
         const optimizedImg = optimized.querySelector('img');
         if (optimizedImg && scripts.moveInstrumentation) {

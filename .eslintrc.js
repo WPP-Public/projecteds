@@ -18,5 +18,18 @@ module.exports = {
     'import/extensions': ['error', { js: 'always' }], // require js file extensions in imports
     'linebreak-style': ['error', 'unix'], // enforce unix linebreaks
     'no-param-reassign': [2, { props: false }], // allow modifying properties of param
+    'xwalk/max-cells': ['error', {
+      'cta-banner': 5,
+      'carousel-cards': 6,
+      'logo-card': 5,
+    }],
   },
+  overrides: [
+    {
+      files: ['component-models.json'],
+      rules: {
+        'xwalk/no-orphan-collapsible-fields': 'off',
+      },
+    },
+  ],
 };
